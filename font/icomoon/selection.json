@@ -4,6 +4,60 @@
     {
       "icon": {
         "paths": [
+          "M1280 0h-769.088l-59.52 490.944c-45.472-32.463-102.183-51.904-163.435-51.904-0.075 0-0.149 0-0.224 0l0.011-0c-1.352-0.022-2.946-0.035-4.544-0.035-161.568 0-292.544 130.976-292.544 292.544s130.976 292.544 292.544 292.544c161.568 0 292.544-130.976 292.544-292.544 0-0.010-0-0.020-0-0.030l0 0.001c0-0.768 0-1.536 0-2.304v0-660.672h631.552l-51.2 422.4c-45.458-32.462-102.156-51.904-163.395-51.904-0.089 0-0.178 0-0.267 0l0.013-0c-1.352-0.022-2.946-0.035-4.544-0.035-161.568 0-292.544 130.976-292.544 292.544s130.976 292.544 292.544 292.544c161.568 0 292.544-130.976 292.544-292.544 0-0.010-0-0.020-0-0.030l0 0.001c0-0.768 0-1.536 0-2.304v0-729.216z"
+        ],
+        "attrs": [],
+        "width": 1280,
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "icon01"
+        ],
+        "colorPermutations": {}
+      },
+      "attrs": [],
+      "properties": {
+        "order": 36,
+        "id": 1,
+        "name": "icon01",
+        "prevSize": 32,
+        "code": 59648
+      },
+      "setIdx": 0,
+      "setId": 11,
+      "iconIdx": 0
+    },
+    {
+      "icon": {
+        "paths": [
+          "M619.008 156.288l212.992-156.288h-282.496l-64 491.008c-49.297-32.576-109.791-51.97-174.814-51.97-0.417 0-0.834 0.001-1.25 0.002l0.064-0c-154.487 9.024-276.352 136.51-276.352 292.459 0 161.78 131.148 292.928 292.928 292.928 161.772 0 292.916-131.136 292.928-292.905l0-0.001c0-0.768 0-1.536 0-2.304v0-572.928z"
+        ],
+        "attrs": [],
+        "width": 832,
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "icon02"
+        ],
+        "colorPermutations": {}
+      },
+      "attrs": [],
+      "properties": {
+        "order": 37,
+        "id": 0,
+        "name": "icon02",
+        "prevSize": 32,
+        "code": 59649
+      },
+      "setIdx": 0,
+      "setId": 11,
+      "iconIdx": 1
+    },
+    {
+      "icon": {
+        "paths": [
           "M726 554v-84h-172v-172h-84v172h-172v84h172v172h84v-172h172zM512 86c236 0 426 190 426 426s-190 426-426 426-426-190-426-426 190-426 426-426z"
         ],
         "attrs": [],
@@ -24,7 +78,7 @@
         "code": 57671,
         "name": "add_circle"
       },
-      "setIdx": 0,
+      "setIdx": 1,
       "setId": 10,
       "iconIdx": 17
     },
@@ -51,7 +105,7 @@
         "code": 57692,
         "name": "remove_circle"
       },
-      "setIdx": 0,
+      "setIdx": 1,
       "setId": 10,
       "iconIdx": 230
     },
@@ -78,7 +132,7 @@
         "code": 59658,
         "name": "menu"
       },
-      "setIdx": 7,
+      "setIdx": 8,
       "setId": 3,
       "iconIdx": 85
     },
@@ -103,7 +157,7 @@
         "code": 59659,
         "name": "search"
       },
-      "setIdx": 7,
+      "setIdx": 8,
       "setId": 3,
       "iconIdx": 123
     },
@@ -128,7 +182,7 @@
         "code": 59650,
         "name": "chevron-down"
       },
-      "setIdx": 4,
+      "setIdx": 5,
       "setId": 6,
       "iconIdx": 33
     },
@@ -153,7 +207,7 @@
         "code": 59651,
         "name": "chevron-small-down"
       },
-      "setIdx": 4,
+      "setIdx": 5,
       "setId": 6,
       "iconIdx": 36
     },
@@ -178,7 +232,7 @@
         "code": 59652,
         "name": "chevron-small-right"
       },
-      "setIdx": 4,
+      "setIdx": 5,
       "setId": 6,
       "iconIdx": 38
     },
@@ -203,7 +257,7 @@
         "code": 59653,
         "name": "chevron-small-up"
       },
-      "setIdx": 4,
+      "setIdx": 5,
       "setId": 6,
       "iconIdx": 39
     },
@@ -228,7 +282,7 @@
         "code": 59654,
         "name": "chevron-thin-left"
       },
-      "setIdx": 4,
+      "setIdx": 5,
       "setId": 6,
       "iconIdx": 41
     },
@@ -253,7 +307,7 @@
         "code": 59655,
         "name": "chevron-thin-right"
       },
-      "setIdx": 4,
+      "setIdx": 5,
       "setId": 6,
       "iconIdx": 42
     },
@@ -278,7 +332,7 @@
         "code": 59656,
         "name": "chevron-up"
       },
-      "setIdx": 4,
+      "setIdx": 5,
       "setId": 6,
       "iconIdx": 44
     }
@@ -312,6 +366,7 @@
       "color": 0,
       "bgColor": 16777215
     },
-    "historySize": 50
+    "historySize": 50,
+    "gridSize": 16
   }
 }

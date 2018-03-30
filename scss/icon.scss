@@ -6,6 +6,12 @@
   @include font-smoothing(antialiased);
 }
 
+.icon-icon01:before {
+  content: "\e900";
+}
+.icon-icon02:before {
+  content: "\e901";
+}
 .icon-add_circle:before {
   content: "\e147";
 }
