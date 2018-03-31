@@ -238,6 +238,11 @@ html {
       float: left;
       padding-left: 10px;
 
+      @include range-width(0, 450px) {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
       a {
         display: inline-block;
         cursor: pointer;
@@ -280,6 +285,11 @@ html {
     }
 
     .nav_boxs {
+
+      @include range-width(0, 450px) {
+        display: none;
+      }
+
       display: inline-block;
       width: 100%;
       margin-top: 15px;
@@ -371,7 +381,213 @@ html {
         }
       }
     }
+
+    .menu_boxs {
+      @include range-width(0, 450px) {
+        display: inline-block;
+      }
+
+      display: none;
+      width: 100%;
+      float: right;
+      padding: 10px;
+      border-top: 5px solid rgba(0, 91, 107, 1.00);
+      border-bottom: 5px solid rgba(0, 91, 107, 1.00);
+      margin: 10px 0;
+
+      i {
+        display: inline-block;
+        float: left;
+        font-size: 18px;
+        font-weight: 600;
+        color: rgba(0, 81, 96, 1.00);
+        font-style: normal;
+      }
+
+      #nav-icon3 {
+        display: inline-block;
+        float: right;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        // margin: 50px auto;
+        @include rotate(0deg);
+        @include transition(all .5s ease-in-out);
+
+        @include range-width(0, 450px) {
+          width: 25px;
+          height: 25px;
+        }
+
+        span {
+          display: block;
+          position: absolute;
+          height: 3px;
+          width: 100%;
+          background: rgba(56, 166, 98, 1.00);
+          
+          left: 0;
+          @include opacity(1);
+          @include rotate(0deg);
+          @include transition(all .25s ease-in-out);
+          
+
+          &:nth-child(1) {
+            top: 0px;
+          }
+
+          &:nth-child(2), &:nth-child(3) {
+            top: 10px;
+          }
+
+          &:nth-child(4) {
+            top: 20px;
+          }
+          @include range-width(0, 450px) {
+            &:nth-child(1) {
+              top: 3px;
+            }
+
+            &:nth-child(2), &:nth-child(3) {
+              top: 10px;
+            }
+
+            &:nth-child(4) {
+              top: 20px - 3px;
+            }
+          }
+        }
+
+        &.open {
+          span {
+            &:nth-child(1) {
+              top: 18px;
+              width: 0%;
+              left: 50%;
+              @include opacity(0);
+              @include transition(background .3s);
+            }
+
+            &:nth-child(2) {
+              @include rotate(45deg);
+            }
+
+             &:nth-child(3) {
+              @include rotate(-45deg);
+            }
+
+             &:nth-child(4) {
+              top: 18px;
+              width: 0%;
+              left: 50%;
+              @include opacity(0);
+              @include transition(background .3s);
+            }
+          }
+        }
+      }
+    }
   }
+
+
+
+  // 手機版，側邊menu
+  #r_menu_boxs {
+    display: none;
+
+    @include range-width(0, 450px) {
+      display: inline-block;
+    }
+
+    position: fixed;
+    right: -250px;
+    top: 135px;
+    z-index: 125;
+    height: calc(100% - 135px);
+    width: 250px;
+    background-color: rgba(234, 98, 97, 1.00);
+    overflow: auto;
+    @include transition(opacity .3s, right .3s);
+    text-align: left;
+
+    &.s_menu {
+      right: 0;    
+    }
+
+    > span, > a, > div > a {
+      display: inline-block;
+      width: 100%;
+      padding:20px;
+      color: rgba(255, 210, 7, 1.00);
+      text-decoration: none;
+      cursor: pointer;
+      @include transition(all .3s);
+
+      &:hover, &:active {
+        background-color: rgba(234, 98, 97, 1.00);
+      }
+    }
+
+    > span, > a {
+      font-size: 18px;
+      border-bottom: 1px solid rgba(255, 210, 7, 1.00);
+      font-weight: 600;
+    }
+
+    > div > a {
+      font-size: 15px;
+      font-weight: 400px;
+
+      &:last-child {
+        border-bottom: 1px solid rgba(255, 210, 7, 1.00);
+      }
+    }
+    // > span {
+    //   &:before {
+    //     display: inline-block;
+    //     content: '\e902';
+    //     font-family: 'icomoon';
+    //     font-size: 22px;
+    //     margin-right: 10px;
+    //   }
+    // }
+    > div {
+      display: none;
+    }
+
+    > span {
+      &.s {
+        + div {
+          display: block;
+        }
+      }
+    }
+  }
+
+  #menu_back {
+    display: none;
+
+    @include range-width(0, 450px) {
+      display: inline-block;
+    }
+
+    position: fixed;
+    left: -500px;
+    top: 135px;
+    z-index: -10;
+    height: calc(100% - 135px);
+    width: 100%;
+    
+    @include transition(opacity .4s, left .3s);
+
+    &.s_menu_b {
+      left: 0;
+      background-color: rgba(0, 81, 96, .8);
+      z-index: 110;
+    }
+  }
+
+
 
   .cent_boxs {
     background-color: white;
