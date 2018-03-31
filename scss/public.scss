@@ -823,6 +823,19 @@ html {
           @include clearfix();
           padding-bottom: 10px;
           margin-bottom: 15px;
+          &.oa_cnd_boxs {
+            display: none;
+          }
+          &.show {
+            .icon_open {
+              &:before {
+                content: '\e15c';
+              }
+            }
+            + .cnd_boxs {
+              display: inline-block;
+            }
+          }
 
           .date {
             display: inline-block;

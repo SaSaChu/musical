@@ -17,6 +17,11 @@ $(function () {
     });
   });
 
+  $('.icon_open').click (function () {
+    var $that = $(this);
+    $that.parent ().toggleClass ('show');
+  });
+
   $('#r_menu_boxs').each (function () {
     var $that = $(this);
     $that.find ('span').click (function () {
