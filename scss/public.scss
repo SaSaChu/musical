@@ -694,6 +694,13 @@ html {
             padding-left: 0;
             text-align: left;
           }
+
+          &.s03 {
+            font-size: 20px;
+            text-align: left;
+            padding-left: 50px;
+            padding-top: 8px;
+          }
         }
       }
 
@@ -889,13 +896,19 @@ html {
             line-height: 28px;
             @include clearfix();
 
+            .theme {
+              display: inline-block;
+              width: 100%;
+
+              img {
+                width: 100%;
+              }
+            }
+
             .theme_p2 {
               display: inline-block;
               width: calc(100% / 2 - 10px * 1 / 2);
               float: left;
-              // d
-              height: 300px;
-              border: 1px solid rgba(255, 0, 0, .3);
 
               &:last-child {
                 margin-left: 10px;
@@ -906,12 +919,13 @@ html {
               display: inline-block;
               width: calc(100% / 3 - 10px * 2 / 3);
               float: left;
-              // d
-              height: 300px;
-              border: 1px solid rgba(255, 0, 0, .3);
 
               &:nth-child(2) {
                 margin: 0 10px;
+              }
+
+              img {
+                width: 100%;
               }
             }
           }
@@ -955,11 +969,54 @@ html {
               }
             }
           }
+
+          .tra {
+            display: inline-block;
+            width: 100%;
+            margin: 0;
+            padding: 0 0 0 25px;
+            text-align: left;
+            line-height: 30px;
+
+            &.hap {
+              padding: 10px 0;
+            }
+
+            i {
+              display: inline-block;
+              width: 100%;
+              font-size: 18px;
+              font-weight: 600;
+              font-style: normal;
+              color: #525252;
+
+              &:before {
+                display: inline-block;
+                content: '●';
+                margin-right: 10px;
+              }
+            }
+          }
         }
       }
 
       .cent_r2 {
         text-align: left;
+
+        p {
+          display: inline-block;
+          width: 100%;
+          padding: 0 0 20px 33px;
+          font-size: 20px;
+          color: #525252;
+          margin: 0;
+          font-weight: 600;
+
+          @include range-width(0, 450px) {
+            padding: 0 0 20px 0;
+            font-size: 18px;
+          }
+        }
 
         .table_title {
           display: inline-block;
@@ -972,6 +1029,12 @@ html {
 
           @include range-width(0,750px) {
             font-size: 18px;
+          }
+
+          &.ac_t {
+            &:before {
+              color: rgba(236, 111, 111, 1.00);
+            }
           }
 
           &:before {
@@ -1005,6 +1068,10 @@ html {
             display: block;
           }
 
+          &.d30 {
+            margin-bottom: 30px;
+          }
+
           .tr {
             display: table-row;
             @include clearfix();
@@ -1021,6 +1088,23 @@ html {
               font-weight: 600;
               color: #525252;
               line-height: 30px;
+
+              &.l_green {
+                width: 50%;
+                border: 1px solid rgba(39, 147, 75, .8);
+
+                &:nth-child(n+2) {
+                  @include range-width(0, 750px) {
+                    border-left: 1px solid rgba(39, 147, 75, .8);
+                  }
+                }
+
+                &:last-child {
+                  @include range-width(0, 750px) {
+                    border-bottom: 5px solid rgba(39, 147, 75, .8);
+                  }
+                }
+              }
 
               &:nth-child(n+2) {
                 border-left: 0;
@@ -1044,6 +1128,10 @@ html {
                 // border-top: 1px solid rgba(0, 62, 76, 1.00);
                 border-left: 1px solid rgba(0, 62, 76, 1.00);
                 border-right: 1px solid rgba(0, 62, 76, 1.00);
+
+                &.l_green {
+                  width: 100%;
+                }
 
                 &:before {
                   content: attr(title);
@@ -1092,6 +1180,13 @@ html {
                   padding-bottom: 10px;
                 }
 
+                &.l_green {
+                  &:before {
+                    color: white;
+                    background-color: rgba(39, 147, 75, .8);
+                  }
+                }
+
                 &:before {
                   content: attr(title);
                   display: inline-block;
@@ -1113,6 +1208,37 @@ html {
                   }
                 }
               }
+            }
+          }
+        }
+
+        .ac_type_boxs {
+          display: inline-block;
+          width: 100%;
+
+          span {
+            display: inline-block;
+            width: 100%;
+            font-size: 26px;
+            font-weight: 600;
+            padding-left: 35px;
+            color: rgba(39, 147, 75, 1.00);
+
+            @include range-width(0, 450px) {
+              font-size: 20px;
+              padding-left: 0;
+            }
+          }
+
+          p {
+            display: inline-block;
+            width: 100%;
+            padding: 10px 0 10px 35px;
+            margin: 0;
+            font-size: 16px;
+
+            @include range-width(0, 450px) {
+              padding: 10px 0;
             }
           }
         }
