@@ -1003,6 +1003,12 @@ html {
             }
           }
         }
+
+        img {
+          display: inline-block;
+          width: 100%;
+          margin-bottom: 20px;
+        }
       }
 
       .cent_r2 {
@@ -1214,6 +1220,23 @@ html {
                 }
               }
             }
+          }
+        }
+
+        .note_t {
+          display: inline-block;
+          width: 100%;
+          border-left: 1px solid rgba(0, 62, 76, 1.00);
+          border-right: 1px solid rgba(0, 62, 76, 1.00);
+          border-bottom: 1px solid rgba(0, 62, 76, 1.00);
+
+          p {
+            display: inline-block;
+            padding: 8px 10px;
+            margin: 0;
+            font-size: 18px;
+            font-weight: 600;
+            color: #525252;
           }
         }
 
