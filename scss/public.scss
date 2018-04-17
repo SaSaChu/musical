@@ -1100,6 +1100,14 @@ html {
               color: #525252;
               line-height: 30px;
 
+              &:nth-child(1), &:nth-child(2) {
+                width: 150px;
+              }
+
+              &:nth-child(3) {
+                width: 425px;
+              }
+
               &.l_green {
                 width: 50%;
                 border: 1px solid rgba(39, 147, 75, .8);
